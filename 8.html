@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<img  src="a1.jpg" onclick="newpage()">
+
+<script>
+document.body.onmouseover = function() {mouseOver()};
+document.body.onmouseout = function() {mouseOut()};
+document.body.onclick=function(){newpage()};
+
+function mouseOver() {
+  document.body.style.background = "green";
+}
+
+function mouseOut() {
+  document.body.style.background = "yellow";
+}
+function newpage(){
+    window.location.assign("https://www.google.com")
+}
+</script>
+
+</body>
+</html>
